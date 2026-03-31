@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
+
+<cardapio>
+
+    <prato id="p1">
+        <nome>Macarrão</nome>
+        <descricao>Macarrão com molho</descricao>
+
+        <ingredientes>
+            <ingrediente>Macarrão</ingrediente>
+            <ingrediente>Molho</ingrediente>
+        </ingredientes>
+
+        <preco moeda="BRL">&reais; 20.00</preco>
+        <calorias>500</calorias>
+        <tempoPreparo>30 min</tempoPreparo>
+    </prato>
+
+</cardapio>
