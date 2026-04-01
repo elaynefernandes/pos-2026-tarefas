@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+
+<quiz versao="1.0">
+    
+    <disciplina>Matemática</disciplina>
+    <professor>
+        <nome>João Silva</nome>
+        <matrícula>12345</matrícula>
+    </professor>
+    <turma>3º Ano A</turma>
+    <data>2026-04-01</data>
+    
+    <questões>
+        <questão>
+            <enunciado>Quanto é 2 + 2?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="nao">3</alternativa>
+                <alternativa correta="sim">4</alternativa>
+                <alternativa correta="nao">5</alternativa>
+                <alternativa correta="nao">6</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é a capital do Brasil?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Rio de Janeiro</alternativa>
+                <alternativa correta="nao">São Paulo</alternativa>
+                <alternativa correta="sim">Brasília</alternativa>
+                <alternativa correta="nao">Salvador</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual linguagem é usada para estruturar páginas web?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">HTML</alternativa>
+                <alternativa correta="nao">Python</alternativa>
+                <alternativa correta="nao">Java</alternativa>
+                <alternativa correta="nao">C++</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Quanto é 10 / 2?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="nao">2</alternativa>
+                <alternativa correta="sim">5</alternativa>
+                <alternativa correta="nao">10</alternativa>
+                <alternativa correta="nao">8</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual planeta é conhecido como planeta vermelho?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Terra</alternativa>
+                <alternativa correta="nao">Júpiter</alternativa>
+                <alternativa correta="sim">Marte</alternativa>
+                <alternativa correta="nao">Vênus</alternativa>
+            </alternativas>
+        </questão>
+
+    </questões>
+
+</quiz>
