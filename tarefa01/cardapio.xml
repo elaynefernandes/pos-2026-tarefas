@@ -15,7 +15,69 @@
 
         <preco moeda="BRL">&reais; 20.00</preco>
         <calorias>500</calorias>
-        <tempoPreparo>30 min</tempoPreparo>
+        <tempoPreparo>30 min</tempoPreparo>     
+    </prato>
+
+    <prato id="p2">
+        <nome>Arroz com Frango</nome>
+        <descricao>Arroz temperado com pedaços de frango</descricao>
+
+        <ingredientes>
+            <ingrediente>Arroz</ingrediente>
+            <ingrediente>Frango</ingrediente>
+            <ingrediente>Temperos</ingrediente>
+        </ingredientes>
+
+        <preco moeda="BRL">&reais; 25.00</preco>
+        <calorias>650</calorias>
+        <tempoPreparo>40 min</tempoPreparo>     
+    </prato>
+
+    <prato id="p3">
+        <nome>Feijoada</nome>
+        <descricao>Feijão preto com carnes variadas</descricao>
+
+        <ingredientes>
+            <ingrediente>Feijão preto</ingrediente>
+            <ingrediente>Carne seca</ingrediente>
+            <ingrediente>Linguiça</ingrediente>
+        </ingredientes>
+
+        <preco moeda="BRL">&reais; 30.00</preco>
+        <calorias>800</calorias>
+        <tempoPreparo>90 min</tempoPreparo>     
+    </prato>
+
+    <prato id="p4">
+        <nome>Salada Caesar</nome>
+        <descricao>Salada com alface, frango e molho caesar</descricao>
+
+        <ingredientes>
+            <ingrediente>Alface</ingredente>
+            <ingrediente>Frango grelhado</ingrediente>
+            <ingrediente>Molho caesar</ingrediente>
+        </ingredientes>
+
+        <preco moeda="BRL">&reais; 18.00</preco>
+        <calorias>350</calorias>
+        <tempoPreparo>20 min</tempoPreparo>     
+    </prato>
+
+    <prato id="p5">
+        <nome>Hambúrguer</nome>
+        <descricao>Hambúrguer com queijo, alface e tomate</descricao>
+
+        <ingredientes>
+            <ingrediente>Pão</ingrediente>
+            <ingrediente>Carne</ingrediente>
+            <ingrediente>Queijo</ingrediente>
+            <ingrediente>Alface</ingrediente>
+            <ingrediente>Tomate</ingrediente>
+        </ingredientes>
+
+        <preco moeda="BRL">&reais; 22.00</preco>
+        <calorias>700</calorias>
+        <tempoPreparo>25 min</tempoPreparo>     
     </prato>
 
 </cardapio>
