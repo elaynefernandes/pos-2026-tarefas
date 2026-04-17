@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<imobiliaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="imobiliaria.xsd">
+
+    <imovel>
+       <descricao>casa ampla com piscina</descricao>
+       <proprietario>
+         <nome>Maria</nome>
+         <email>Maria@gmail.com</email>
+         <telefone>99999-1111</telefone>
+         <telefone>96877-2455</telefone>
+       </proprietario>
+       <endereco>
+         <rua>Rua padre</rua>
+         <bairro>centro</bairro>
+         <cidade>Natal</cidade>
+         <numero>23</numero>
+       </endereco>
+       <caracteristicas>
+         <tamanho>300</tamanho>
+         <numQuartos>6</numQuartos>
+         <numBanheiros>5</numBanheiros>
+       </caracteristicas>
+       <valor>400000</valor>
+    </imovel>
+
+    <imovel>
+       <descricao>casa bonita</descricao>
+       <proprietario>
+         <nome>leticia</nome>
+         <telefone>99899-1111</telefone>
+       </proprietario>
+       <endereco>
+         <rua>Rua verde</rua>
+         <bairro>centro</bairro>
+         <cidade>Natal</cidade>
+         <numero>25</numero>
+       </endereco>
+       <caracteristicas>
+         <tamanho>350</tamanho>
+         <numQuartos>7</numQuartos>
+         <numBanheiros>2</numBanheiros>
+       </caracteristicas>
+       <valor>50000</valor>
+    </imovel>
+
+    <imovel>
+       <descricao>casa moderna</descricao>
+       <proprietario>
+         <nome>rafael</nome>
+         <email>rafa@gmail.com</email>
+         <telefone>99299-1111</telefone>
+       </proprietario>
+       <endereco>
+         <rua>Rua bela</rua>
+         <bairro>centro</bairro>
+         <cidade>Natal</cidade>
+       </endereco>
+       <caracteristicas>
+         <tamanho>900</tamanho>
+         <numQuartos>4</numQuartos>
+         <numBanheiros>3</numBanheiros>
+       </caracteristicas>
+       <valor>30000</valor>
+    </imovel>
+
+    <imovel>
+       <descricao>casa simples</descricao>
+       <proprietario>
+         <nome>paulo</nome>
+         <email>paulo@gmail.com</email>
+         <telefone>99999-1301</telefone>
+       </proprietario>
+       <endereco>
+         <rua>Rua mar</rua>
+         <bairro>centro</bairro>
+         <cidade>Natal</cidade>
+         <numero>33</numero>
+       </endereco>
+       <caracteristicas>
+         <tamanho>200</tamanho>
+         <numQuartos>6</numQuartos>
+         <numBanheiros>8</numBanheiros>
+       </caracteristicas>
+       <valor>90000</valor>
+    </imovel>
+
+    <imovel>
+       <descricao>casa grande</descricao>
+       <proprietario>
+         <nome>manuela</nome>
+         <email>manu@gmail.com</email>
+         <telefone>99709-1111</telefone>
+       </proprietario>
+       <endereco>
+         <rua>Rua triste</rua>
+         <bairro>centro</bairro>
+         <cidade>Natal</cidade>
+         <numero>50</numero>
+       </endereco>
+       <caracteristicas>
+         <tamanho>400</tamanho>
+         <numQuartos>6</numQuartos>
+         <numBanheiros>7</numBanheiros>
+       </caracteristicas>
+       <valor>400000</valor>
+    </imovel>
+
+</imobiliaria>
