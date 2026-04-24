@@ -1,0 +1,66 @@
+{
+  "quiz": {
+    "versao": "1.0",
+    "disciplina": "Matemática",
+    "professor": {
+      "nome": "João Silva",
+      "matricula": "12345"
+    },
+    "turma": "3º Ano A",
+    "data": "2026-04-01",
+    "questoes": {
+      "questao": [
+        {
+          "enunciado": "Quanto é 2 + 2?",
+          "pontuacao": 1,
+          "alternativas": [
+            { "texto": "3", "correta": "nao" },
+            { "texto": "4", "correta": "sim" },
+            { "texto": "5", "correta": "nao" },
+            { "texto": "6", "correta": "nao" }
+          ]
+        },
+        {
+          "enunciado": "Qual é a capital do Brasil?",
+          "pontuacao": 1,
+          "alternativas": [
+            { "texto": "Rio de Janeiro", "correta": "nao" },
+            { "texto": "São Paulo", "correta": "nao" },
+            { "texto": "Brasília", "correta": "sim" },
+            { "texto": "Salvador", "correta": "nao" }
+          ]
+        },
+        {
+          "enunciado": "Qual linguagem é usada para estruturar páginas web?",
+          "pontuacao": 1,
+          "alternativas": [
+            { "texto": "HTML", "correta": "sim" },
+            { "texto": "Python", "correta": "nao" },
+            { "texto": "Java", "correta": "nao" },
+            { "texto": "C++", "correta": "nao" }
+          ]
+        },
+        {
+          "enunciado": "Quanto é 10 / 2?",
+          "pontuacao": 1,
+          "alternativas": [
+            { "texto": "2", "correta": "nao" },
+            { "texto": "5", "correta": "sim" },
+            { "texto": "10", "correta": "nao" },
+            { "texto": "8", "correta": "nao" }
+          ]
+        },
+        {
+          "enunciado": "Qual planeta é conhecido como planeta vermelho?",
+          "pontuacao": 1,
+          "alternativas": [
+            { "texto": "Terra", "correta": "nao" },
+            { "texto": "Júpiter", "correta": "nao" },
+            { "texto": "Marte", "correta": "sim" },
+            { "texto": "Vênus", "correta": "nao" }
+          ]
+        }
+      ]
+    }
+  }
+}

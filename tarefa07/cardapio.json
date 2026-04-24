@@ -1,0 +1,76 @@
+{
+  "cardapio": {
+    "prato": [
+      {
+        "id": "p1",
+        "nome": "Macarrão",
+        "descricao": "Macarrão com molho",
+        "ingredientes": {
+          "ingrediente": ["Macarrão", "Molho"]
+        },
+        "preco": {
+          "moeda": "BRL",
+          "valor": "20.00"
+        },
+        "calorias": 500,
+        "tempoPreparo": "30 min"
+      },
+      {
+        "id": "p2",
+        "nome": "Arroz com Frango",
+        "descricao": "Arroz temperado com pedaços de frango",
+        "ingredientes": {
+          "ingrediente": ["Arroz", "Frango", "Temperos"]
+        },
+        "preco": {
+          "moeda": "BRL",
+          "valor": "25.00"
+        },
+        "calorias": 650,
+        "tempoPreparo": "40 min"
+      },
+      {
+        "id": "p3",
+        "nome": "Feijoada",
+        "descricao": "Feijão preto com carnes variadas",
+        "ingredientes": {
+          "ingrediente": ["Feijão preto", "Carne seca", "Linguiça"]
+        },
+        "preco": {
+          "moeda": "BRL",
+          "valor": "30.00"
+        },
+        "calorias": 800,
+        "tempoPreparo": "90 min"
+      },
+      {
+        "id": "p4",
+        "nome": "Salada Caesar",
+        "descricao": "Salada com alface, frango e molho caesar",
+        "ingredientes": {
+          "ingrediente": ["Alface", "Frango grelhado", "Molho caesar"]
+        },
+        "preco": {
+          "moeda": "BRL",
+          "valor": "18.00"
+        },
+        "calorias": 350,
+        "tempoPreparo": "20 min"
+      },
+      {
+        "id": "p5",
+        "nome": "Hambúrguer",
+        "descricao": "Hambúrguer com queijo, alface e tomate",
+        "ingredientes": {
+          "ingrediente": ["Pão", "Carne", "Queijo", "Alface", "Tomate"]
+        },
+        "preco": {
+          "moeda": "BRL",
+          "valor": "22.00"
+        },
+        "calorias": 700,
+        "tempoPreparo": "25 min"
+      }
+    ]
+  }
+}
