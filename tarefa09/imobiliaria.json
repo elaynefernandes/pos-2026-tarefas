@@ -1,0 +1,115 @@
+{
+  "imobiliaria": {
+    "imovel": [
+      {
+        "descricao": "casa ampla com piscina",
+        "proprietario": {
+          "nome": "Maria",
+          "email": "Maria@gmail.com",
+          "telefone": [
+            "99999-1111",
+            "96877-2455"
+          ]
+        },
+        "endereco": {
+          "rua": "Rua padre",
+          "bairro": "centro",
+          "cidade": "Natal",
+          "numero": "23"
+        },
+        "caracteristicas": {
+          "tamanho": "300m²",
+          "numQuartos": 6,
+          "numBanheiros": 5
+        },
+        "valor": 400000
+      },
+      {
+        "descricao": "casa bonita",
+        "proprietario": {
+          "nome": "leticia",
+          "telefone": [
+            "99899-1111"
+          ]
+        },
+        "endereco": {
+          "rua": "Rua verde",
+          "bairro": "centro",
+          "cidade": "Natal",
+          "numero": "25"
+        },
+        "caracteristicas": {
+          "tamanho": "350m²",
+          "numQuartos": 7,
+          "numBanheiros": 2
+        },
+        "valor": 50000
+      },
+      {
+        "descricao": "casa moderna",
+        "proprietario": {
+          "nome": "rafael",
+          "email": "rafa@gmail.com",
+          "telefone": [
+            "99299-1111"
+          ]
+        },
+        "endereco": {
+          "rua": "Rua bela",
+          "bairro": "centro",
+          "cidade": "Natal"
+        },
+        "caracteristicas": {
+          "tamanho": "900m²",
+          "numQuartos": 4,
+          "numBanheiros": 3
+        },
+        "valor": 30000
+      },
+      {
+        "descricao": "casa simples",
+        "proprietario": {
+          "nome": "paulo",
+          "email": "paulo@gmail.com",
+          "telefone": [
+            "99999-1301"
+          ]
+        },
+        "endereco": {
+          "rua": "Rua mar",
+          "bairro": "centro",
+          "cidade": "Natal",
+          "numero": "33"
+        },
+        "caracteristicas": {
+          "tamanho": "200m²",
+          "numQuartos": 6,
+          "numBanheiros": 8
+        },
+        "valor": 90000
+      },
+      {
+        "descricao": "casa grande",
+        "proprietario": {
+          "nome": "manuela",
+          "email": "manu@gmail.com",
+          "telefone": [
+            "99709-1111"
+          ]
+        },
+        "endereco": {
+          "rua": "Rua triste",
+          "bairro": "centro",
+          "cidade": "Natal",
+          "numero": "50"
+        },
+        "caracteristicas": {
+          "tamanho": " 400m²",
+          "numQuartos": 6,
+          "numBanheiros": 7
+        },
+        "valor": 400000
+      }
+    ]
+  }
+}
