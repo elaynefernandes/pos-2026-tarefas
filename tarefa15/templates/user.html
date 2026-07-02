@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Meus Dados{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-lg">
+            <div class="card-header bg-primary text-white py-3">
+                <h4 class="mb-0"><i class="bi bi-person-badge"></i> Meus Dados</h4>
+            </div>
+            <div class="card-body p-4">
+                <div class="row">
+                    <!-- FOTO -->
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        {% if user_data.foto %}
+                            <img src="{{ user_data.foto }}" alt="Foto" 
+                                 class="img-fluid rounded-circle shadow-sm mb-3" 
+                                 style="max-width: 180px; border: 4px solid #0d6efd;">
+                        {% else %}
+                            <div class="display-1 text-secondary">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- DADOS -->
+                    <div class="col-md-8">
+                        <h2 class="mb-3">{{ user_data.nome or 'Nome não informado' }}</h2>
+                        
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-muted small fw-bold">Matrícula</label>
+                                    <p class="mb-0">{{ user_data.matricula or 'Não informada' }}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-muted small fw-bold">E-mail</label>
+                                    <p class="mb-0">{{ user_data.email or 'Não informado' }}</p>
+                                </div>
+                            </div>
+                            
+                            {% if user_data.curso %}
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-muted small fw-bold">Curso</label>
+                                    <p class="mb-0">{{ user_data.curso }}</p>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-light">
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{{ url_for('boletim') }}" class="btn btn-success">
+                        <i class="bi bi-journal"></i> Boletim
+                    </a>
+                    <a href="{{ url_for('profile') }}" class="btn btn-outline-primary">
+                        <i class="bi bi-person"></i> Perfil Completo
+                    </a>
+                    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+                        <i class="bi bi-box-arrow-right"></i> Sair
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .info-item {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .info-item:last-child {
+        border-bottom: none;
+    }
+    .info-item label {
+        display: block;
+        margin-bottom: 2px;
+    }
+</style>
+{% endblock %}
