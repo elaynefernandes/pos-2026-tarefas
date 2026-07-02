@@ -1,41 +1,39 @@
 {% extends "base.html" %}
 
-{% block title %}Perfil{% endblock %}
+{% block title %}Perfil Completo{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-lg-8">
         <div class="card border-0 shadow-lg">
             <div class="card-header bg-primary text-white py-3">
-                <h4 class="mb-0"><i class="bi bi-person-badge"></i> Perfil do Usuário</h4>
+                <h4 class="mb-0"><i class="bi bi-person-badge"></i> Perfil Completo</h4>
             </div>
             <div class="card-body p-4">
                 <div class="row">
+                    <!-- FOTO -->
                     <div class="col-md-4 text-center mb-4 mb-md-0">
-                        {% if user_data.foto %}
-                            <img src="{{ user_data.foto }}" alt="Foto" class="img-fluid rounded-circle shadow-sm mb-3" 
-                                 style="max-width: 200px; border: 4px solid var(--bs-primary);">
+                        {% if user_data.url_foto_150x200 %}
+                            <img src="{{ user_data.url_foto_150x200 }}" alt="Foto" 
+                                 class="img-fluid rounded-circle shadow-sm mb-3" 
+                                 style="max-width: 180px; border: 4px solid #0d6efd;">
                         {% else %}
-                            <div class="display-1 text-secondary">
-                                <i class="bi bi-person-circle"></i>
-                            </div>
+                            <img src="https://suap.ifrn.edu.br/static/images/user.png" alt="Foto padrão" 
+                                 class="img-fluid rounded-circle shadow-sm mb-3" 
+                                 style="max-width: 180px; border: 4px solid #6c757d;">
+                            <p class="text-muted small">Sem foto cadastrada</p>
                         {% endif %}
-                        
-                        <div class="mt-2">
-                            <span class="badge bg-{{ 'success' if user_data.situacao == 'Ativo' else 'warning' }}">
-                                {{ user_data.situacao or 'Situação não informada' }}
-                            </span>
-                        </div>
                     </div>
                     
+                    <!-- DADOS -->
                     <div class="col-md-8">
-                        <h3 class="mb-3">{{ user_data.nome or 'Nome não informado' }}</h3>
+                        <h2 class="mb-3">{{ user_data.nome_usual or user_data.vinculo.nome or 'Nome não informado' }}</h2>
                         
                         <div class="row g-3">
                             <div class="col-12">
                                 <div class="info-item">
                                     <label class="text-muted small fw-bold">Matrícula</label>
-                                    <p class="mb-0">{{ user_data.matricula or 'Não informada' }}</p>
+                                    <p class="mb-0">{{ user_data.matricula or user_data.vinculo.matricula or 'Não informada' }}</p>
                                 </div>
                             </div>
                             
@@ -47,7 +45,7 @@
                             </div>
                             
                             {% if user_data.cpf %}
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="info-item">
                                     <label class="text-muted small fw-bold">CPF</label>
                                     <p class="mb-0">{{ user_data.cpf }}</p>
@@ -56,7 +54,7 @@
                             {% endif %}
                             
                             {% if user_data.data_nascimento %}
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="info-item">
                                     <label class="text-muted small fw-bold">Data de Nascimento</label>
                                     <p class="mb-0">{{ user_data.data_nascimento }}</p>
@@ -64,20 +62,42 @@
                             </div>
                             {% endif %}
                             
-                            {% if user_data.curso %}
+                            {% if user_data.vinculo.curso %}
                             <div class="col-12">
                                 <div class="info-item">
                                     <label class="text-muted small fw-bold">Curso</label>
-                                    <p class="mb-0">{{ user_data.curso }}</p>
+                                    <p class="mb-0">{{ user_data.vinculo.curso }}</p>
                                 </div>
                             </div>
                             {% endif %}
                             
-                            {% if user_data.turma %}
+                            {% if user_data.vinculo.situacao %}
                             <div class="col-12">
                                 <div class="info-item">
-                                    <label class="text-muted small fw-bold">Turma</label>
-                                    <p class="mb-0">{{ user_data.turma }}</p>
+                                    <label class="text-muted small fw-bold">Situação</label>
+                                    <p class="mb-0">
+                                        <span class="badge bg-{{ 'success' if user_data.vinculo.situacao == 'Matriculado' else 'warning' }}">
+                                            {{ user_data.vinculo.situacao }}
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                            {% if user_data.vinculo.campus %}
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-muted small fw-bold">Campus</label>
+                                    <p class="mb-0">{{ user_data.vinculo.campus }}</p>
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                            {% if user_data.vinculo.turno %}
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-muted small fw-bold">Turno</label>
+                                    <p class="mb-0">{{ user_data.vinculo.turno }}</p>
                                 </div>
                             </div>
                             {% endif %}
@@ -88,7 +108,7 @@
             <div class="card-footer bg-light">
                 <div class="d-flex justify-content-center gap-3">
                     <a href="{{ url_for('boletim') }}" class="btn btn-success">
-                        <i class="bi bi-journal"></i> Ver Boletim
+                        <i class="bi bi-journal"></i> Boletim
                     </a>
                     <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
                         <i class="bi bi-house"></i> Início

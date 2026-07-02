@@ -45,12 +45,12 @@
                             {% else %}
                             <i class="bi bi-person-circle me-2 fs-4"></i>
                             {% endif %}
-                            <span>{{ user_data.nome.split()[0] if user_data.nome else 'Usuário' }}</span>
+                            <span>{{ user_data.nome_usual.split()[0] if user_data.nome_usual else 'Usuário' }}</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
                                 <div class="dropdown-item-text">
-                                    <div class="fw-bold">{{ user_data.nome or 'Usuário' }}</div>
+                                    <div class="fw-bold">{{ user_data.nome_usual or 'Usuário' }}</div>
                                     <small class="text-muted">{{ user_data.matricula or '' }}</small>
                                 </div>
                             </li>
